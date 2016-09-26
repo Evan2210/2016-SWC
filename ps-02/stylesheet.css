@@ -9,5 +9,6 @@ h1{
     background-color: currentColor;
     color: Red;
     padding-top: 10px;
-    padding-left:100px
+    padding-left: 100px
+    text-align: center;
 }
