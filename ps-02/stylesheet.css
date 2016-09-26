@@ -1,0 +1,13 @@
+body{
+  width:500px;
+  margin:auto;
+  background-color: white;
+}
+h1{
+    font-family: cursive;
+    font-size: 26pt;
+    background-color: currentColor;
+    color: Red;
+    padding-top: 10px;
+    padding-left:100px
+}
