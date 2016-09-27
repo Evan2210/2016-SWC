@@ -1,0 +1,13 @@
+div{
+  float:right;
+  width:50%;
+  padding-top: 30%;
+  margin:auto;
+  background-color: pink;
+
+}
+
+body{
+  background-color: grey;
+  padding: 50px 20px 50px 20px;
+}
