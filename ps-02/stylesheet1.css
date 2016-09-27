@@ -6,13 +6,13 @@ body{
   h1{
     font-family: 'open sans', sans-serif;
     font-size: 26pt;
-    text-align: center;
+    text-align:left;
     color: red;
 }
   h2{
     font-family: 'open sans', sans-serif;
     font-size: 20pt;
-    text-align: center;
+    text-align: left;
     color: pink;
 
   }
