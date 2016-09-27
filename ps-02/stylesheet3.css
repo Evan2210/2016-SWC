@@ -1,0 +1,24 @@
+div{
+  float:right;
+  padding:1%;
+}
+.square1{
+  background-color: grey;
+  width:50vw;
+  height:50vw
+}
+.square2{
+  background-color: white;
+  width:30vw;
+  height:30vw;
+}
+.square3{
+  background-color: pink;
+  width:30vw;
+  heigth:20vw;
+}
+
+body{
+  background-color: black;
+  padding:50px 30px 50px 30px;
+}
