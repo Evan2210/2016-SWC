@@ -1,0 +1,53 @@
+body{
+  margin:auto;
+  background-color: grey;
+  padding: 50px 20px 50px 20px;
+}
+  h1{
+    font-family: 'open sans', sans-serif;
+    font-size: 26pt;
+    text-align: center;
+    color: red;
+}
+  h2{
+    font-family: 'open sans', sans-serif;
+    font-size: 20pt;
+    text-align: center;
+    color: pink;
+
+  }
+  h3{
+    font-family: 'open sans', serif;
+    font-size: 16pt;
+    text-align: left;
+    color: white;
+  }
+  {
+    .square {
+    float:left;
+    position: relative;
+    width: 50%;
+    padding-bottom : 50%;
+    margin:1%;
+    background-color:#1E1E1E;
+    overflow:hidden;
+}
+
+.content {
+    position:absolute;
+    height:90%;
+    width:90%;
+    padding: 5%;
+    line-height: 20px;
+
+}
+
+.content .rs{
+    width:auto;
+    height:auto;
+    max-height:90%;
+    max-width:100%;
+    padding-bottom : 3%;
+
+
+  }
