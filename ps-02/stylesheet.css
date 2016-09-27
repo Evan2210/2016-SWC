@@ -4,11 +4,16 @@ body{
   background-color: white;
 }
 h1{
-    font-family: cursive;
+    font-family:serif;
     font-size: 26pt;
-    background-color: currentColor;
-    color: Red;
+    background-color:white;
     padding-top: 10px;
     padding-left: 100px
-    text-align: center;
+}
+h2{
+  font-family:serif;
+  font-size: 35pt;
+  font-style: italic;
+  background-color: white
+
 }
