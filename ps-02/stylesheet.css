@@ -23,12 +23,16 @@ h3{
   font-family:serif;
   font-size:35pt;
   font-style:italic;
-  background-color:white;
-  color:#F00;
+  color:white;
 }
 h4{
   font-family:serif;
   font-size:35pt;
   font-style:italic;
   color:white;
+}
+a{
+  font-size: 35pt;
+  color:#F00;
+  background-color: white;
 }
