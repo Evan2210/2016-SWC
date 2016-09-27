@@ -1,14 +1,18 @@
 <html>
-<body>
+
 	<h1>Evan Cheng</h1>
 	<h2>2016-09-25</h2>
  	<h3>ps-01</h3>
+
 	<style media="screen">
-	.main{
+	.container{
 			background-color: gray;
 			position:fixed;
 			left:10%;
 			top:5px;
+			display:flex;
+			align-items:flex-end;
+			flex-direction: column;
 	}
 	.inside{
 		background-color: red;
@@ -18,7 +22,19 @@
 		padding:3em;
 		border:1px solid white;
 	}
+	p{
+		border:1px solid;
+	}
 	</style>
+
+	<body>
+		<div class="container">
+			<div class="inside">
+				<p>this is a heading</p>
+			</div>
+		</div>
+
+
 	<a href ="https://evan2210.github.io/2016-SWC/ps-01/a.html"> Hello World Webpage</a>
 </body>
 </html>
