@@ -19,6 +19,6 @@
 	ctx.fillRect(0,100, 225, 200);
 	ctx.fillStyle=pat3;
 	ctx.fill();
-	ctx.fillRect(225, 100, 450, 200);
+	ctx.fillRect(225, 100, 450, 200); 
 	ctx.fillStyle=pat4;
 	ctx.fill();
