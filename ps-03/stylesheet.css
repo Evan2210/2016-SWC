@@ -1,8 +1,15 @@
  body {
         font-family:Verdana, Geneva, sans-serif;
-		alignment-adjust:auto;
-		color:#F93
-		
+	
+		color:#F93;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
         
       }
 	  
