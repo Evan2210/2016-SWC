@@ -1,6 +1,6 @@
 // JavaScript Document var canvas = document.getElementById('canvas');
-    var c=document.getElementById("canvas")
-    var ctx = c.getContext("2d");
+    var c=document.getElementById('canvas')
+    var ctx = c.getContext('2d');
 	var imgaa=document.getElementById("a");
 	var imgbb=document.getElementById("b");
 	var imgcc=document.getElementById("c");
