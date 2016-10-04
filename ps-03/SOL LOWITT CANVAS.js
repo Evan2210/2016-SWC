@@ -13,12 +13,12 @@
     drawingPad.rect(0, 0, 225, 100);
 	drawingPad.fillStyle=pat1;
 	drawingPad.fill();
-	
-			
-	
+	drawingPad.rect(225, 0, 450, 100);
 	drawingPad.fillStyle=pat2;
-	drawingPad.fillRect(225, 0, 450, 100);
+	drawingPad.fill();
+	drawingPad.rect(0,100, 225, 200);
 	drawingPad.fillStyle=pat3;
-	drawingPad.fillRect(0,100, 225, 200);
+	drawingPad.fill();
+	drawingPad.rect(225, 100, 450, 200);
 	drawingPad.fillStyle=pat4;
-	drawingPad.fillRect(225, 100, 450, 200);
+	drawingPad.fill();
