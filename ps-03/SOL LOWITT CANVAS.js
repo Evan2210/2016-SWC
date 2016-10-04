@@ -11,10 +11,10 @@
 	var pat3=ctx.createPattern(imgcc,"repeat");
 	var pat4=ctx.createPattern(imgdd,"repeat");
 	
-    
-    ctx.rect(0, 0, 225, 100);
-	ctx.fillStyle=pat1;
-	ctx.fill();
+    ctx.fillStyle=pat1;
+    ctx.fillRect(0, 0, 225, 100);
+	
+	
 	ctx.rect(225, 0, 450, 100);
 	ctx.fillStyle=pat2;
 	ctx.fill();
