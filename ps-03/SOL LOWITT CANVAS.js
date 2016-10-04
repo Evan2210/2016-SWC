@@ -13,7 +13,7 @@
 	
     
     ctx.rect(0, 0, 225, 100);
-	ctx.fillStyle="red";
+	ctx.fillStyle=pat1;
 	ctx.fill();
 	ctx.rect(225, 0, 450, 100);
 	ctx.fillStyle=pat2;
@@ -24,10 +24,4 @@
 	ctx.rect(225, 100, 450, 200); 
 	ctx.fillStyle=pat4;
 	ctx.fill();
-	/*var c=document.getElementById("myCanvas");
-	var ctx=c.getContext("2d");
-	var img=document.getElementById("lamp");
-	var pat=ctx.createPattern(img,"repeat");
-	ctx.rect(0,0,150,100);
-	ctx.fillStyle=pat;
-	ctx.fill();*/
+	
