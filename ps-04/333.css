@@ -10,14 +10,14 @@ body{
 			bottom: 0px;
 			left: 0px;
 			right: 0px;
-			background-color:#CCC;
+			background-color: #CCC;
 		}
 		
 		
 			
 		#canvas{
 			border: 10px solid hsl(0,20%,90%);
-			background-color:#FF9;
+			background-color:#CCC;
 			width: 30%;
 			height: 50%;
 			align-items: center;

@@ -17,7 +17,7 @@ body{
 			
 		#canvas{
 			border: 10px solid hsl(0,20%,90%);
-			background-color:#FF9;
+			background-color:#FCC;
 			width: 30%;
 			height: 50%;
 			align-items: center;
