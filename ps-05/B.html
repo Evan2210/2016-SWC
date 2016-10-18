@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Solution B</title>
+	<link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+	<style media="screen">
+	body{
+		font-family: 'Cuprum', sans-serif;
+		background:#CCC;
+	}
+	
+	
+	p{
+		font-size:36px;
+		font-family: 'Cuprum', sans-serif;
+		color:#06F;
+		
+	}
+	
+    h1{
+		margin-top:1%;
+		margin-left:45%;
+		color:#FFF;
+		font-size:48px;
+	}
+	canvas{
+		background:#000;
+		top:120px;
+		left:36%;
+		position:absolute;
+	}
+
+	h2{
+		text-align:center;
+	}
+	div{
+		width:500px;
+		height:100px;
+		alignment-items:center;
+		left:36%;
+		top:68%;
+		position:absolute;
+	}
+	</style>
+	</head>
+
+<body>
+	 <h1>Solution B</h1>
+     <a href="index.html">
+       <p>back to home</p>
+     </a><br/>
+     <a href="A.html">
+       <p>solution A</p>
+     </a><br />
+     
+     <a href="C.html">
+        <p>solution C</p>
+     </a><br />
+     <a href="D.html">
+        <p>solution D</p>
+     </a>
+    <canvas id="illusion"  width="500px" height="500px" style="border:1px solid #000000;" ></canvas><br />
+    <div>
+    <h2>If you look around in the neighbouring figure you will notice the appearance 
+      and disappearance of black dots at the crossings.Even though this figure looks 
+      similar to the Hermann-Grid, it is markedly more vivid. Furthermore, the effect 
+      is probably caused by different mechanisms than those causing the Hermann-Grid 
+      effect.</h2>
+    </div>
+      <script type="text/javascript">
+     
+    	 document.write(Date());
+		 
+		 var canvas = document.getElementById("illusion");
+     	 var drawingPad = canvas.getContext('2d');
+		 
+		
+		  for (var y=0;y<10;y++)
+    {  
+		for (var x=0;x<10;x++)
+		{
+			
+		   
+		   drawingPad.beginPath();
+		   drawingPad.moveTo(20+50*x,0);
+		   drawingPad.lineTo(20+50*x,50+50*y);
+           drawingPad.lineWidth = 10;
+		   drawingPad.strokeStyle = "hsla(0,0%,50%,1.0)";
+		   drawingPad.stroke();
+		   
+		   
+		   drawingPad.beginPath();
+		   drawingPad.moveTo(0,20+50*y);
+		   drawingPad.lineTo(50+50*x,20+50*y);
+           drawingPad.lineWidth = 10;
+		   drawingPad.strokeStyle = "hsla(0,0%,50%,1.0)";
+           drawingPad.stroke();
+		   
+		   
+		}
+		
+		
+     
+		 
+	}
+	
+	
+		for (var b=0; b<10; b++)
+		{
+			for (var a=0; a<10; a++)
+			{
+		   	drawingPad.beginPath();
+		   	drawingPad.fillStyle= "hsla(0,0%,100%,0.0)";
+		   	drawingPad.arc(20+50*a,20+50*b,5,0,4*Math.PI,true);
+		   	drawingPad.fill();
+		   	drawingPad.closePath();
+		   
+		   
+			}
+	
+		}
+	
+	
+	 </script> 
+     
+     	
+     
+</body>
+</html>

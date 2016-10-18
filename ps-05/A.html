@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Solution A</title>
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+	<style media="screen">
+	body{
+		font-family: 'Cuprum', sans-serif;
+		background:#CCC;
+	}
+	#c1{
+		position:absolute;  
+		top:300px;  
+		left:400px; 
+		background:#FFF;
+		 
+	}
+	#c2{
+		
+		position:absolute;  
+		top:300px;  
+		left:850px; 
+		background:#FFF; 
+		
+	}
+	#c3{
+		position:absolute;  
+		top:300px;  
+		left:1300px; 
+		background:#000; 
+	}
+	p{
+		font-size:36px;
+		font-family: 'Cuprum', sans-serif;
+		color:#06F;
+			
+	}
+	
+    h1{
+		margin-top:1%;
+		margin-left:45%;
+		color:#FFF;
+		font-size:48px;
+	}
+
+
+
+
+
+	</style>
+</head>
+
+<body>
+	 
+     
+     <h1>Solution A</h1>
+     <a href="index.html">
+       <p>back to home</p>
+     </a><br/>
+     <a href="B.html">
+       <p>solution B</p>
+     </a><br />
+     
+     <a href="C.html">
+        <p>solution C</p>
+     </a><br />
+     <a href="D.html">
+        <p>solution D</p>
+     </a>
+     <div id="c1">
+     <canvas id="grid" width="400" height="400" style="border:1px solid #000000;">Grids </canvas>
+     </div>
+     
+     <div id="c2">
+     <canvas id="lines" width="400" height="400"  style="border:1px solid #000000;">Lines </canvas>
+     </div>
+     
+     <div id="c3">
+     <canvas id="g2" width="400" height="400" style="border:1px solid #000000;"> </canvas>
+     </div>
+     <script type="text/javascript">
+     
+     document.write(Date());
+	 
+	 var canvas = document.getElementById('grid');
+     var drawingPad = canvas.getContext('2d');
+
+    
+	 
+	 for (var y=0;y<11;y++)
+    {
+		for (var x=0;x<11;x++)
+		{
+			
+		
+		   drawingPad.beginPath();
+		   drawingPad.moveTo(30*x,0);
+		   drawingPad.lineTo(30*x,30*y);
+           drawingPad.lineWidth =x/100;
+		   drawingPad.stroke();
+		   drawingPad.fillRect(30*x,30*y,4,4);
+		 
+		 
+		   
+		}
+		drawingPad.beginPath();
+		drawingPad.moveTo(0,30*y);
+		drawingPad.lineTo(30*x,30*y);
+        drawingPad.lineWidth = x/50;
+		drawingPad.stroke();
+		drawingPad.fillRect(30*x,30*y,4,4);
+		
+     
+		 
+	}
+	
+	
+	
+	
+	
+	for (var xa=0; xa<11;xa++)
+	{
+		for (var ya=0;ya<11;ya++)
+		{
+			drawingPad.beginPath();
+			drawingPad.moveTo(300+10*xa,300);
+			drawingPad.lineTo(300+10*xa,300+10*ya);
+			drawingPad.lineWidth= xa/50;
+			drawingPad.stroke();
+			
+			drawingPad.beginPath();
+	        drawingPad.moveTo(300,300+10*ya);
+		    drawingPad.lineTo(300+10*xa,300+10*ya);
+			drawingPad.lineWidth= ya/50;
+			drawingPad.stroke();
+			
+			
+		
+			
+	    }
+		
+		
+		
+		
+		
+		 
+	}
+	
+	
+	
+
+	var canvas = document.getElementById('lines');
+    var ctx= canvas.getContext('2d');
+	
+	starx=Math.random()*canvas.width;
+    stary=Math.random()*canvas.height;
+    
+    ctx.fillStyle="rgba(0,0,0,.08)";
+    ctx.lineWidth=5;
+    ctx.lineJoin="round";
+        
+    function int() {
+       setInterval(render,30);
+    }
+       
+    function render() {
+    ctx.beginPath();
+    ctx.fillRect(0,0,canvas.width,canvas.height);
+    ctx.moveTo(starx,stary);
+    starx=Math.random()*canvas.width;
+    stary=Math.random()*canvas.height;
+    ctx.bezierCurveTo(Math.random()*canvas.width,Math.random()*canvas.height,Math.random()*canvas.width,Math.random()*canvas.height,starx,stary);
+    var r=Math.round(Math.random()*255);
+    var g=Math.round(Math.random()*255);
+    var b=Math.round(Math.random()*255);
+    ctx.strokeStyle="rgba("+r+","+g+","+b+",1)";
+    ctx.stroke();
+	}
+       
+        window.onload=int;
+
+	 var canvas = document.getElementById("g2");
+     	 var drawingPad = canvas.getContext('2d');
+		 
+		
+		  for (var y=0;y<10;y++)
+    {  
+		for (var x=0;x<10;x++)
+		{
+			
+		   
+		   drawingPad.beginPath();
+		   drawingPad.moveTo(20+50*x,0);
+		   drawingPad.lineTo(20+50*x,50+50*y);
+           drawingPad.lineWidth = 10;
+		   drawingPad.strokeStyle = "hsla(0,0%,50%,1.0)";
+		   drawingPad.stroke();
+		   
+		   
+		   drawingPad.beginPath();
+		   drawingPad.moveTo(0,20+50*y);
+		   drawingPad.lineTo(50+50*x,20+50*y);
+           drawingPad.lineWidth = 10;
+		   drawingPad.strokeStyle = "hsla(0,0%,50%,1.0)";
+           drawingPad.stroke();
+		   
+		   
+		}
+		
+		
+     
+		 
+	}
+	
+	for (var b=0; b<10; b++)
+	{
+		for (var a=0; a<10; a++)
+		{
+		   drawingPad.arc(20+50*a,20+50*b,5,0,360,Math.PI);
+		   drawingPad.stroke();
+		   
+		   
+		}
+	}
+	
+     </script>
+</body>
+</html>

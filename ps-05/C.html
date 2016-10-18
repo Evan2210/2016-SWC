@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Solution C</title>
+	<link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+	<style media="screen">
+	body{
+		font-family: 'Cuprum', sans-serif;
+		background:#CCC;
+	}
+	
+	
+	p{
+		font-size:36px;
+		font-family: 'Cuprum', sans-serif;
+		color:#06F;
+			
+	}
+	
+    h1{
+		margin-top:1%;
+		margin-left:45%;
+		color:#FFF;
+		font-size:48px;
+	}
+
+	canvas{
+		background:#FFF;
+		top:120px;
+		left:36%;
+		position:absolute;
+	}
+
+
+
+	</style>
+	</head>
+
+<body>
+	<h1>Solution C</h1>
+     <a href="index.html">
+       <p>back to home</p>
+     </a><br/>
+     <a href="A.html">
+       <p>solution A</p>
+     </a><br />
+     
+     <a href="B.html">
+        <p>solution B</p>
+     </a><br />
+     <a href="D.html">
+        <p>solution D</p>
+     </a>
+     <canvas id="eye" width="500px" height="500px" style="border:1px solid #000;">
+     	
+      </canvas>
+     
+      <script type="text/javascript">
+     
+    	 document.write(Date());
+		 /*var canvas = document.getElementById("eye");
+     	 var ctx = canvas.getContext('2d');
+		 
+         for (var y=0;y<5;y++)
+		 {
+		 	for (var x=0;x<5;x++)
+		 	{
+			 ctx.beginPath()
+			 ctx.moveTo (10*x,10*y);
+  			 ctx.lineTo(20*x,10*y);
+			 
+  			 ctx.moveTo(10*x,10*y);
+			 ctx.lineTo (10*x,30*y);
+ 			 
+ 			 ctx.moveTo(10*x,20*y)
+ 			 ctx.lineTo(20*x,20*y);
+ 			 ctx.stroke ();
+			 ctx.closePath()
+			 }
+		 }
+		 */
+		
+			 var c = document.getElementById("eye");
+			 var ctx = c.getContext("2d");
+			 
+			 var x=100;
+			 var y=50;
+			
+			 
+			 for(var i=0;i<5;i++){
+				y=y+60; 
+				ctx.font = "50px Arial";
+	   			ctx.strokeText("E",x,y);
+			 }
+			y=50;
+			  for(var i=0;i<5;i++){
+				  y=y+60; 
+				ctx.font = "60px Arial";
+	   			ctx.strokeText("P",x+50,y);
+				
+			 }
+			y=50;
+			  for(var i=0;i<5;i++){
+				  y=y+60; 
+				ctx.font = "70px Arial";
+	   			ctx.strokeText("D",x+100,y);
+			 }
+			y=50;
+			  for(var i=0;i<5;i++){
+				  y=y+60; 
+				ctx.font = "80px Arial";
+	   			ctx.strokeText("B",x+150,y);
+			 }
+			y=50;
+			  for(var i=0;i<5;i++){
+				  y=y+60; 
+				ctx.font = "90px Arial";
+	   			ctx.strokeText("A",x+200,y);
+			 }
+		
+		 
+	 </script>
+</body>
+</html>
