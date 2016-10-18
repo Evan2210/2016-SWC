@@ -106,20 +106,22 @@
 	}
 	
 	
+		
+		
 		for (var b=0; b<10; b++)
+	{
+		drawingPad.fillStyle= "#fff";
+		for (var a=0; a<10; a++)
 		{
-			for (var a=0; a<10; a++)
-			{
-		   	drawingPad.beginPath();
-		   	drawingPad.fillStyle= "hsla(0,0%,100%,0.0)";
-		   	drawingPad.arc(20+50*a,20+50*b,5,0,4*Math.PI,true);
-		   	drawingPad.fill();
-		   	drawingPad.closePath();
+			drawingPad.beginPath();
+			
+		   drawingPad.arc(20+50*a,20+50*b,8,0,4*Math.PI,Math.PI);
 		   
+		   drawingPad.fill();
+		   drawingPad.closePath();
 		   
-			}
-	
 		}
+	}
 	
 	
 	 </script> 
