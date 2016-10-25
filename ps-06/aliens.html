@@ -51,21 +51,14 @@
 		position:fixed;
 		
 	}
-	p4{
-		font-family: 'Russo One', sans-serif;
-		font-size:24px;
-		color:#FFF;
-		margin-top:350px;
-		position:fixed;
-		
-	}
+	
 	.button{
 		width:160px;
 		height:30px;
 		font-family: 'Russo One', sans-serif;
 		font-size:24px;
 		color:#F9F;
-		margin-top:450px;
+		margin-top:350px;
 		position:fixed;
 		background:#000;
 		
@@ -73,24 +66,44 @@
 	.button:hover{
 		transform:scale(1.2,1.2)
 	}
+	table{
+		margin:0 auto;
+	}
+	td{
+		padding:15px;
+	}
 	
 	</style>
 	</head>
 
-<body background="background.jpg">
+<body onload="draw" background="background.jpg">
 	<form id="form1" name="form1" method:"post" action="index.html " >
 	<input  type="submit" name="button" id="button1" value=""/ >
 	</form>
     <p1>Back to Earth By Click!!!!</p1>
     <p2>Please try your keyboard!</p2>
     <p3>You may also hide yourself<br /> by moving</p3>
-    <p4>Click anywhere to see <br />another alien</p4>
+    
     <a href="aliens.html">
     <div class="button">Play Again!</div>
     </a>
+    <table>
+    	<tr>
+        	<td><img src="alien1.png" /></td>
+            <td><img src="alien2.png" /></td>
+            <td><img src="alien3.png" /></td>
+        </tr>
+        <tr>
+        	<td><img src="alien5.png" /></td>
+            <td><img src="alien6.png" /></td>
+            <td><img src="alien7.png"/></td>
+        
+        </tr>
+    </table>
+            
+        
     
-    
-   <canvas id="aliens" width="1700" height="1000">
+   <canvas id="aliens" width="1600" height="400">
   
    </canvas>
   <script>  
@@ -100,7 +113,7 @@
 	var ctx;  
 	var sx=[0,0,0],sy=[0,0,0,0];  
 	var sWidth=200,sHeight=200;  
-	var x=400,y=40;  
+	var x=100,y=200;  
 	var dx=20,dy=20;  
 	var s={  
     	Back:[[0,0],[0,0],[0,0]],
@@ -113,7 +126,7 @@
 	var img=new Image();  
 	img.src="spaceship.png";  
 	var draw=function(){  
-    ctx.clearRect(0,0,1700,1000);
+    ctx.clearRect(0,0,1600,400);
     ctx.drawImage(img,sx[c[i][0]],sy[c[i][1]],sWidth,sHeight,x-dx,y-dy,sWidth,sHeight);
 	};
 	
@@ -151,12 +164,12 @@
             if(i>2)i=0;
         	}
     	},500);
-	};
+	}; 
 	
 	
 	
 	
-	 document.addEventListener("click",function draw(){
+	 /*document.addEventListener("click",function draw(){
 		 context=document.getElementById("aliens").getContext("2d");
 		  setInterval(draw, 0.01);
                 context.clearRect(0, 0, 1700, 1000);
@@ -170,7 +183,7 @@
 		 });
 	 
 	 var pic= new Image();
-	 pic.src="alien2.png";
+	 pic.src="alien2.png";*/
 	  
             
     </script>
