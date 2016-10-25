@@ -59,18 +59,18 @@ Evan2210.drawLeg = function(ctx, left) {
   // ctx.beginPath();
   // ctx.arc(horizontalCenter, 120, 120, 0, circleDegrees);
   // ctx.fill();
-  drawImage("head.png", ctx, 100, 43);
+  drawImage("https://evan2210.github.io/2016-SWC/ps-06/head.png", ctx, 100, 43);
 };
 
  Evan2210.drawMiddle = function(ctx) {
-  drawImage("middle.png", ctx, 100, 240);
+  drawImage("https://evan2210.github.io/2016-SWC/ps-06/middle.png", ctx, 100, 240);
   // draw the rest of the body...
   
 };
 
  Evan2210.drawBottom = function(ctx) {
   
-  drawImage("bottom.png", ctx, 100, 480);
+  drawImage("https://evan2210.github.io/2016-SWC/ps-06/bottom.png", ctx, 100, 480);
 };
 
  Evan2210.drawCorpse = function(ctx) {
