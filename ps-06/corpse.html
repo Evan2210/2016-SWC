@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <link href="https://fonts.googleapis.com/css?family=Creepster|Permanent+Marker" rel="stylesheet">
+<title>Monster</title>
+<link rel="stylesheet" href="ps-06-starter.css">
+</head>
+
+<body background="corpse2.jpg" > 
+	
+	<form id="form1" name="form1" method:"post" action="index1.html " >
+	<input  type="submit" name="button" id="button1" value=""/ >
+	</form>
+
+	<form id="form2" name="form2" method:"post" action="corpse.html" >
+	<input  type="submit" name="button" id="button2" value=""/>
+	</form>
+    <form id="form3" name="form3" method:"post" action="aliens.html" >
+	<input  type="submit" name="button" id="button3" value=""/>
+	</form>
+   
+	<div class='horizontal-bar'>
+    </div>
+    <canvas id="corpse" width="400" height="720"></canvas>
+    <div class="horizontal-bar footnote">
+    </div>
+    
+	<p1>Home</p1>
+	<p2>Corpse</p2>
+    <p3>DO NOT PUT YOUR MOUSE ON MY BODY!!!!</p3>
+	<p4>Space Invaders</p4>
+    <script src="corpse.js" charset="utf-8"></script>
+    <script>
+      Evan2210.drawCorpse(document.getElementById('corpse').getContext('2d'));
+    </script>
+</body>
+</html>

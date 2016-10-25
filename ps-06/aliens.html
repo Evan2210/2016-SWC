@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+	<title>Space Invaders</title>
+ 
+	<style = media>
+	#button1{
+		width:150px;
+		height:150px;
+		border:hidden;
+		background:url(button4.png) no-repeat;
+		
+		position:fixed;
+	}
+	#button1:hover{
+		
+		transform:rotate(45deg);
+		
+		
+		
+	}
+	p1{
+		font-family: 'Russo One', sans-serif;
+		font-size:24px;
+		color:#FCC;
+		margin-top:150px;
+		position:fixed;
+	}
+	#aliens{
+		
+		background:none;
+		margin-left:150px;
+		position:fixed;
+	}
+	p2{
+		font-family: 'Russo One', sans-serif;
+		font-size:24px;
+		color:#FCF;
+		margin-top:200px;
+		position:fixed;
+	
+		
+	}
+	p3{
+		font-family: 'Russo One', sans-serif;
+		font-size:24px;
+		color:#FFF;
+		margin-top:250px;
+		position:fixed;
+		
+	}
+	p4{
+		font-family: 'Russo One', sans-serif;
+		font-size:24px;
+		color:#FFF;
+		margin-top:350px;
+		position:fixed;
+		
+	}
+	.button{
+		width:160px;
+		height:30px;
+		font-family: 'Russo One', sans-serif;
+		font-size:24px;
+		color:#F9F;
+		margin-top:450px;
+		position:fixed;
+		background:#000;
+		
+	}
+	.button:hover{
+		transform:scale(1.2,1.2)
+	}
+	
+	</style>
+	</head>
+
+<body background="background.jpg">
+	<form id="form1" name="form1" method:"post" action="index.html " >
+	<input  type="submit" name="button" id="button1" value=""/ >
+	</form>
+    <p1>Back to Earth By Click!!!!</p1>
+    <p2>Please try your keyboard!</p2>
+    <p3>You may also hide yourself<br /> by moving</p3>
+    <p4>Click anywhere to see <br />another alien</p4>
+    <a href="aliens.html">
+    <div class="button">Play Again!</div>
+    </a>
+    
+    
+   <canvas id="aliens" width="1700" height="1000">
+  
+   </canvas>
+  <script>  
+  	var LEFT=37,UP=38,RIGHT=39,DOWN=40;  
+	var isKeyDown=false;  
+	var speed=10;  
+	var ctx;  
+	var sx=[0,0,0],sy=[0,0,0,0];  
+	var sWidth=200,sHeight=200;  
+	var x=400,y=40;  
+	var dx=20,dy=20;  
+	var s={  
+    	Back:[[0,0],[0,0],[0,0]],
+    	Right:[[0,1],[0,1],[0,1]],
+    	Front:[[0,2],[0,2],[0,2]],
+    	Left:[[0,3],[0,3],[0,3]]
+	}
+	var i=1;  
+	var c=s.Front;  
+	var img=new Image();  
+	img.src="spaceship.png";  
+	var draw=function(){  
+    ctx.clearRect(0,0,1700,1000);
+    ctx.drawImage(img,sx[c[i][0]],sy[c[i][1]],sWidth,sHeight,x-dx,y-dy,sWidth,sHeight);
+	};
+	
+	document.onkeydown=function(e){  
+    isKeyDown=true;
+    if(e.keyCode===UP){
+        c=s.Back;
+        y-=speed;
+    }
+    if(e.keyCode===DOWN){
+        c=s.Front;
+        y+=speed;
+    }
+    if(e.keyCode===LEFT){
+        c=s.Left;
+        x-=speed;
+    }
+    if(e.keyCode===RIGHT){
+        c=s.Right;
+        x+=speed;
+    }
+	};
+	document.onkeyup=function(e){  
+    isKeyDown=false;
+    i=1;
+    draw();
+	};
+	
+	window.onload=function(){  
+    ctx=document.getElementById("aliens").getContext("2d");
+    setInterval(draw,1000/30);
+    setInterval(function(){
+        if(isKeyDown){
+            i+=2;
+            if(i>2)i=0;
+        	}
+    	},500);
+	};
+	
+	
+	
+	
+	 document.addEventListener("click",function draw(){
+		 context=document.getElementById("aliens").getContext("2d");
+		  setInterval(draw, 0.01);
+                context.clearRect(0, 0, 1700, 1000);
+                context.save(); 
+                context.translate(1700 /2*Math.random(), 1000 /2*Math.random()); 
+                context.drawImage(pic, 0, 0);
+                context.restore(); 
+         
+		 
+		 
+		 });
+	 
+	 var pic= new Image();
+	 pic.src="alien2.png";
+	  
+            
+    </script>
+</body>
+</html>
