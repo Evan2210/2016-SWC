@@ -120,9 +120,9 @@
 	var dx=20,dy=20;  
 	var s={  
     	Back:[[0,0],[0,0],[0,0]],
-    	Right:[[0,1],[0,1],[0,1]],
-    	Front:[[0,2],[0,2],[0,2]],
-    	Left:[[0,3],[0,3],[0,3]]
+    	Right:[[0,0],[0,0],[0,0]],
+    	Front:[[0,0],[0,0],[0,0]],
+    	Left:[[0,0],[0,0],[0,0]]
 	}
 	var i=1;  
 	var c=s.Front;  
@@ -130,10 +130,10 @@
 	img.src="spaceship.png";  
 	var draw=function(){  
     ctx.clearRect(0,0,1600,400);
-    ctx.drawImage(img,sx[c[i][0]],sy[c[i][1]],sWidth,sHeight,x-dx,y-dy,sWidth,sHeight);
+    ctx.drawImage(img,sx[c[i][0]],sy[c[i][0]],sWidth,sHeight,x-dx,y-dy,200,200);
 	};
 	
-	document.onkeydown=function(e){  
+	document.onkeydown=function (e){  
     isKeyDown=true;
     if(e.keyCode===UP){
         c=s.Back;
