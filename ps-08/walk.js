@@ -36,7 +36,7 @@ function run(cxt){
 	
     cxt.fillStyle='blue';
     cxt.beginPath();
-    cxt.arc(250,100,30,0,2*Math.PI,false);
+    cxt.arc(250,time*Math.random(),30,0,2*Math.PI,false);
     cxt.closePath();
     cxt.fill();
     cxt.restore();
