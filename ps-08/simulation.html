@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Simulation</title>
+<embed src="Minions-Jingle Bells(小黄人版).mp3" width="270" height="70">
+<link type="text/css" href="../ps-08/index.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">
+<style media="screen">
+	canvas {
+    	 margin-top:10%;
+		 margin-left:35%;
+		 position:fixed;
+ 		}
+	body{
+		background:url(yellow.jpg);
+		
+	}
+	#snow1{
+		margin-top:5%;
+		position:absolute;
+		
+	}
+	
+	#snow2{
+		margin-left:20%;
+		position:absolute;
+		
+	}
+	#snow3{
+		margin-left:67%;
+		position:absolute;
+		
+	}
+	#snow4{
+		margin-left:85%;
+		position:absolute;
+		
+	}
+	#snow5{
+		margin-left:35%;
+		margin-top:10%;
+		position:absolute;
+		
+		
+	}
+	#snow6{
+		margin-left:50%;
+		margin-top:13%;
+		position:absolute;
+		
+	}
+	button{
+		width:125px;
+		height:100px;
+		background:url(yellow_%E5%89%AF%E6%9C%AC.png) no-repeat;
+		margin-left:1150px;
+		margin-top:290px;
+		position:fixed;
+		border:hidden;
+		}
+		button:hover{
+			transform:scale(1.2,1.2);
+			border:hidden;
+			
+		}
+		embed{
+			position:fixed
+		}
+		
+</style>
+</head>
+
+<body>
+	<body>
+	<div class="ribbon">
+    <a href="index.html"><span>Home</span></a>
+    <a href="walk.html"><span>Random Walk</span></a>
+    <a href="vehicles.html"><span>Vehicles</span></a>
+    <a href="simulation.html"><span>Simulation</span></a>
+    </div>
+    <button>Start Snowing</button>
+    <div id="snow1"; style="background:url(snowball.png);width:210px;height:120px"></div>
+    <div id="snow2"; style="background:url(snowball.png);width:210px;height:120px"></div>
+    <div id="snow3"; style="background:url(snowball.png);width:210px;height:120px"></div>
+    <div id="snow4"; style="background:url(snowball.png);width:210px;height:120px"></div>
+     <div id="snow5"; style="background:url(snowball.png);width:210px;height:120px"></div>
+      <div id="snow6"; style="background:url(snowball.png);width:210px;height:120px"></div>
+    <script src=		"http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js">
+	
+	
+	</script>
+    <script>
+	$(document).ready(function(){
+    	$("button").click(function(){
+			var snow1=$("#snow1");
+    		snow1.animate({top:'150px',
+			left:"100px",},'slow');
+			snow1.animate({top:'300px',left:'50px'},'slow');
+			snow1.animate({top:'450px',left:'150px',opacity:'0.2'},'slow');
+			snow1.animate({top:'600px',left:'200px',opacity:'0.1'},'slow');
+			
+		var snow2=$("#snow2");
+    		snow2.animate({top:'180px',
+			left:"100px",},'slow');
+			snow2.animate({top:'350px',left:'200px'},'slow');
+			snow2.animate({top:'490px',left:'100px',opacity:'0.6'},'slow');
+			snow2.animate({top:'640px',left:'200px',opacity:'0.1'},'slow');
+			var snow3=$("#snow3");
+    		snow3.animate({top:'100px',
+			right:"500px",},'slow');
+			snow3.animate({top:'250px',right:'350px'},'slow');
+			snow3.animate({top:'450px',right:'200px',opacity:'0.6'},'slow');
+			snow3.animate({top:'640px',right:'300px',opacity:'0.1'},'slow');
+			var snow4=$("#snow4");
+    		snow4.animate({top:'180px',
+			right:"100px",},'slow');
+			snow4.animate({top:'350px',right:'150px'},'slow');
+			snow4.animate({top:'490px',right:'300px',opacity:'0.6'},'slow');
+			snow4.animate({top:'640px',right:'200px',opacity:'0.1'},'slow');
+			var snow6=$("#snow6");
+    		snow6.animate({top:'180px',
+			right:"500px",},'slow');
+			snow6.animate({top:'350px',right:'400px'},'slow');
+			snow6.animate({top:'490px',right:'300px',opacity:'0.6'},'slow');
+			snow4.animate({top:'640px',right:'400px',opacity:'0.1'},'slow');
+			var snow5=$("#snow5");
+    		snow5.animate({top:'200px',
+			left:"400px",},'slow');
+			snow5.animate({top:'350px',left:'450px'},'slow');
+			snow5.animate({top:'490px',left:'300px',opacity:'0.6'},'slow');
+			snow5.animate({top:'640px',left:'350px',opacity:'0.1'},'slow');
+  		});
+	});
+	</script>
+</body>
+</html>

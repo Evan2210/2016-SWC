@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Vehicles</title>
+<link type="text/css" href="../ps-08/index.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">
+<style media="screen">
+	#car1{
+	margin-top:100px;
+	position:fixed;
+	
+	
+	}
+	p1{
+		margin-top:210px;
+		
+		position:fixed;
+		
+	}
+	p2{
+		margin-top:210px;
+		margin-left:460px;
+		position:fixed;
+		
+	}
+	p3{
+		margin-top:210px;
+		margin-left:760px;
+		position:fixed;
+		
+	}
+	#car2{
+	margin-top:400px;
+	position:fixed;
+	
+	
+	}
+	button{
+		background:#FFF;
+		
+	}
+	#bear1{
+		margin-top:100px;
+		margin-left:1000px;
+		position:fixed;
+	}
+	#bear2{
+		margin-top:400px;
+		margin-left:1000px;
+		position:fixed;
+	}
+	p4{
+		margin-top:510px;
+		margin-left:10px;
+		position:fixed;
+		
+	}
+	p5{
+		margin-top:510px;
+		margin-left:460px;
+		position:fixed;
+		
+	}
+	p6{
+		margin-top:510px;
+		margin-left:760px;
+		position:fixed;
+		
+	}
+	a{
+		text-decoration:none;
+	}
+	
+</style>
+</head>
+
+<body>
+	<div class="ribbon">
+    <a href="index.html"><span>Home</span></a>
+    <a href="walk.html"><span>Random Walk</span></a>
+    <a href="vehicles.html"><span>Vehicles</span></a>
+    <a href="simulation.html"><span>Simulation</span></a>
+    </div>
+    
+    <button> Start Cars </button>
+    <button> 
+    <a href="vehicles.html">Restart</a>
+    </button>
+    <div class="img" id="car1">
+    <img src="cars.png" />
+    </div>
+    <div class="img" id="bear1">
+    <img src="bear.png" />
+    </div>
+    <p1>Start</p1>
+    <p2>Brake</p2>
+    <p3>Stop</p3>
+    
+     <div class="img" id="car2">
+    <img src="cars.png" />
+    </div>
+     <div class="img" id="bear2">
+    
+    <img src="bear.png" /> 
+    </div>
+    <p4>Start</p4>
+    <p5>Speed down</p5>
+    <p6>Detour</p6>
+    
+    <script src=		"http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js">
+	
+	</script>
+    
+    <script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			var car1=$('#car1');
+			car1.animate({left:'500px',},'fast');
+			car1.animate({left:'500px',});
+			
+			car1.animate({left:'800px',},'1000', 'swing');
+			
+			
+			
+			var car2=$('#car2');
+			car2.animate({left:'500px'},'fast');
+			car2.animate({left:'800px'},'slow');
+			
+			car2.animate({top:'150px'},'slow');
+			car2.animate({top:'150px', left:'1000px'},'slow');
+			
+			});
+			
+		});
+	
+
+	
+	</script>
+    
+    
+</body>
+</html>
