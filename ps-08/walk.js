@@ -31,7 +31,7 @@ function run(cxt){
 	clearScreen();
     cxt.save();
 	
-    cxt.translate(250,250);
+    cxt.translate(250,time*Math.random());
     cxt.rotate(time*2*Math.PI/180);
 	
     cxt.fillStyle='blue';
