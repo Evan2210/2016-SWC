@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+		background:url(back2.jpg);
+	
+		font-family: 'Delius Unicase', cursive;
+	}
+	p1{
+		font-size:36px;
+		margin-left:140px;
+		margin-top:160px;
+		position:fixed;
+		
+	}
+	#button1{
+		background:url(Capture2.PNG);
+		width:128px;
+		height:100px;
+		margin-left:334px;
+		margin-top:437px;
+		
+	}
+	#button1:hover{
+		transform:scale(1.2,1.2)
+		
+	}
+	input{
+		font-family: 'Delius Unicase', cursive;
+		font-size:20px;
+		color:#F00;
+		font-weight:bold;
+	}
+

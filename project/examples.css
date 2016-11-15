@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background:url(hhhhhhhhhhhh.jpg);
+}
+#button1{
+	background:url(Capture111.png);
+		width:102px;
+		height:105px;
+		margin-left:350px;
+		margin-top:37px;
+		
+	}
+#button1:hover{
+		transform:scale(1.2,1.2)
+		
+	}
+	input{
+		color:#FFF;
+		text-align:inherit;
+	}
+
