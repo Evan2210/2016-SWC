@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	box-sizing:border-box;
+	
+}
+body{
+	font-family: 'Delius Unicase', cursive;
+	background:#999;
+	
+	 
+	
+}
+svg{
+	background:#CCC;
+	margin-left:500px;
+	margin-top:200px;
+	position:fixed;
+	
+}
+.horizontal-bar {
+  width: 500px;
+  display: flex;
+  padding: 1em;
+  justify-content: space-around;
+  justify-self: stretch;
+  font-size: 9pt;
+  color: hsl(20,10%,60%);
+ 
+}
+.top {
+  font-size: 20pt;
+  color:#FCC;
+  font-weight: bold;
+  margin-left:500px;
+  margin-top:100px;
+  position:fixed;
+}
+#hi{
+	margin-left:50px;
+	margin-top:400px;
+	position:fixed;
+	transform:rotate(1.5deg);
+	
+	
+	}
+p1{
+	font-size:18px;
+	transform:rotate(8deg);
+	color:#333;
+	margin-left:75px;
+	margin-top:420px;
+	position:fixed;
+		
+}
+p2{
+	font-size:18px;
+	transform:rotate(-5deg);
+	color:#333;
+	margin-left:75px;
+	margin-top:480px;
+	position:fixed;
+		
+}
+p3{
+	font-size:18px;
+	transform:rotate(20deg);
+	color:#333;
+	margin-left:75px;
+	margin-top:530px;
+	position:fixed;
+		
+}
+
+a{
+	text-decoration:none;
+	color:#FCC;
+	font-weight:bold;
+	font-size:16px;
+	
+}
+#hello{
+	width:400px;
+	height:200px;
+	margin-top:50px;
+	margin-left:1100px;
+	position:absolute;
+	
+}
+#buttons{
+
+	
+ 
+}
+
+#button_1{
+  height: 30px; 
+  width:90px;
+  background:#FFF;
+  margin-left:650px;
+  position:fixed;
+  
+}
+#button_2{
+  height: 30px; 
+  width:90px;
+  background:#FFF;
+  margin-left:750px;
+  position:fixed;
+  
+}
+#button_1:hover{
+	background:#F00;
+	
+}
+#button_2:hover{
+	background:#F00;
+	
+}
+p4{
+	margin-top:700px;
+	margin-left:400px;
+	position:fixed;
+	color:#FCC;
+	
+}
+p5{
+	margin-top:720px;
+	margin-left:500px;
+	position:fixed;
+	color:#FCC;
+	
+}
+p6{
+	margin-top:200px;
+	margin-left:670px;
+	position:fixed;
+	color:#000;
+	
+}
+p7{
+	margin-top:200px;
+	margin-left:770px;
+	position:fixed;
+	color:#000;
+	
+}
