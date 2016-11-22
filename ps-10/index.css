@@ -6,15 +6,15 @@
 }
 body{
 	font-family: 'Delius Unicase', cursive;
-	background:#999;
+	background:url(cat.jpg);
 	
 	 
 	
 }
 svg{
 	background:#CCC;
-	margin-left:500px;
-	margin-top:200px;
+	margin-left:30px;
+	margin-top:100px;
 	position:fixed;
 	
 }
@@ -30,25 +30,18 @@ svg{
 }
 .top {
   font-size: 20pt;
-  color:#FCC;
+  color:#33F;
   font-weight: bold;
-  margin-left:500px;
-  margin-top:100px;
+  margin-left:30px;
+  
   position:fixed;
 }
-#hi{
-	margin-left:50px;
-	margin-top:400px;
-	position:fixed;
-	transform:rotate(1.5deg);
-	
-	
-	}
+
 p1{
 	font-size:18px;
 	transform:rotate(8deg);
 	color:#333;
-	margin-left:75px;
+	margin-left:1155px;
 	margin-top:420px;
 	position:fixed;
 		
@@ -57,7 +50,7 @@ p2{
 	font-size:18px;
 	transform:rotate(-5deg);
 	color:#333;
-	margin-left:75px;
+	margin-left:1155px;
 	margin-top:480px;
 	position:fixed;
 		
@@ -66,7 +59,7 @@ p3{
 	font-size:18px;
 	transform:rotate(20deg);
 	color:#333;
-	margin-left:75px;
+	margin-left:1155px;
 	margin-top:530px;
 	position:fixed;
 		
@@ -82,8 +75,8 @@ a{
 #hello{
 	width:400px;
 	height:200px;
-	margin-top:50px;
-	margin-left:1100px;
+	margin-top:500px;
+	margin-left:1150px;
 	position:absolute;
 	
 }
@@ -97,7 +90,7 @@ a{
   height: 30px; 
   width:90px;
   background:#FFF;
-  margin-left:650px;
+  margin-left:170px;
   position:fixed;
   
 }
@@ -105,7 +98,7 @@ a{
   height: 30px; 
   width:90px;
   background:#FFF;
-  margin-left:750px;
+  margin-left:300px;
   position:fixed;
   
 }
@@ -118,29 +111,31 @@ a{
 	
 }
 p4{
-	margin-top:700px;
-	margin-left:400px;
+	margin-top:600px;
+	margin-left:30px;
 	position:fixed;
-	color:#FCC;
+	color:#33F;
+	font-weight:bold;
 	
 }
 p5{
-	margin-top:720px;
-	margin-left:500px;
+	margin-top:620px;
+	margin-left:30px;
 	position:fixed;
-	color:#FCC;
+	color:#33F;
+	font-weight:bold;
 	
 }
 p6{
-	margin-top:200px;
-	margin-left:670px;
+	margin-top:100px;
+	margin-left:190px;
 	position:fixed;
 	color:#000;
 	
 }
 p7{
-	margin-top:200px;
-	margin-left:770px;
+	margin-top:100px;
+	margin-left:320px;
 	position:fixed;
 	color:#000;
 	

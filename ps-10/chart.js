@@ -27,11 +27,11 @@ axes.attr({
 
 //add increment labels
 var vertical_1 = s.text(10, 450,"0");
-var vertical_2 = s.text(5, 360,"0.25");
-var vertical_3 = s.text(5, 270,"0.5");
-var vertical_4 = s.text(5, 180,"0.75");
-var vertical_5 = s.text(10, 90,"1");
-var vertical_6 = s.text(0, 50,"time/hours");
+var vertical_2 = s.text(5, 360,"15");
+var vertical_3 = s.text(5, 270,"30");
+var vertical_4 = s.text(5, 180,"45");
+var vertical_5 = s.text(10, 90,"60");
+var vertical_6 = s.text(0, 50,"time/minutes");
 
 var horizontal_1 = s.text(40, 470,"Monday");
 var horizontal_2 = s.text(100, 485,"Tuseday");
