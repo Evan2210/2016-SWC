@@ -2,48 +2,100 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <script src="https://d3js.org/d3.v4.min.js"></script>
- <script src="Snap.svg-0.4.1/dist/snap.svg-min.js">
-</script> 
-<script type="text/javascript"src="clock.js">
-</script>
+<title>Homework7</title>
+<style media="screen">
+body{
+	background:url(yyy.jpg);
+	
+}
 
-<title>Homework 11</title>
+button{
+	width:100px;
+	height:50px;
+	align-items:center;
+	
+	
+}
+#b1{
+	color:#333;
+	background:#333;
+	border:hidden;
+	margin-left:450px;
+	margin-top:200px;
+	position:fixed;
+	
+}
+#b1:hover{
+	width:100px;
+	height:180px;
+	margin-top:100px;
+	margin-left:450px;
+	position:fixed;
+	background:url(HHH.png);
+	
+}
+#b2{
+	background:#666;
+	border:dotted;
+	margin-left:550px;
+	margin-top:200px;
+	position:fixed;
+	
+}
+#b2:hover{
+	background:#FCC;
+	
+}
+#b3{
+	background:#666;
+	margin-left:650px;
+	margin-top:200px;
+	position:fixed;
+	border:dotted;
+	
+}
+#b3:hover{
+	background:#FCC;
+	
+}
+#b4{
+	background:#666;
+	margin-left:750px;
+	margin-top:200px;
+	position:fixed;
+	border:dotted;
+}
+.img{
+	margin-left:450px;
+	margin-top:300px;
+	position:fixed;
+	
+}
+#b4:hover{
+	background:#FCC;
+	
+}
+a{
+	text-decoration:none;
+	color:#FFF;
+	
+}
+</style>
 </head>
 
 <body>
-<svg class='hide' xmlns:svg="http://www.w3.org/2000/svg">
-    <symbol id='digit_c'>
-    <rect width='100' height='400' x='0' y='0'></rect>
-    </symbol>
 
-    <symbol id='digit' viewBox='0 0 500 1100'
-      preserveAspectRatio="xMinYMin meet" >
-        <use class='c1' xlink:href='#digit_c' y='100'></use>
-        <use class='c2' xlink:href='#digit_c' y='600'></use>
-        <use class='c3' xlink:href='#digit_c' x='-100' y='100' transform='rotate(-90,0,0)'></use>
-        <use class='c4' xlink:href='#digit_c' x='-600' y='100' transform='rotate(-90,0,0)'></use>
-        <use class='c5' xlink:href='#digit_c' x='-1100' y='100' transform='rotate(-90,0,0)'></use>
-        <use class='c6' xlink:href='#digit_c' x='500' y='100' ></use>
-        <use class='c7' xlink:href='#digit_c' x='500' y='600'></use>
-    </symbol>
-</svg>
-<svg id='digit_clock' ViewBox='0 0 890 100'>
-    <use class='num' x="0" y="0" xlink:href="#digit"></use>
-    <use class='num' x="100" y="0" xlink:href="#digit"></use>
-    <g class='dot' id="digit_dot">
-        <circle cx='200' cy='40' r='5'></circle>
-        <circle cx='200' cy='70' r='5'></circle>
-    </g>
-    <use class='num' x="230" y="0" xlink:href="#digit"></use>
-    <use class='num' x="330" y="0" xlink:href="#digit"></use>
-    <use class="dot" x="230" y="0" xlink:href="#digit_dot"></use>
-    <use class='num' x="460" y="0" xlink:href="#digit"></use>
-    <use class='num' x="560" y="0" xlink:href="#digit"></use>
-</svg>
-	
- 
+<button id="b1"></button>
 
-
+<button id="b2">
+<a href="index.html">HOME</a>
+</button>
+<button id="b3">
+<a href="index1.html">Chart</a></button>
+<button id="b4">
+<a href="clock.html">Clock</a></button>
+<div class="img">
+<img src="128.jpg" />
+</div>
 </body>
 </html>
