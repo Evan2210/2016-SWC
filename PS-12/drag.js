@@ -61,4 +61,4 @@ function loadMesh(name, callback){
       callback(obj);
     });
   });
-};
+}; 
