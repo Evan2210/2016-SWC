@@ -2,7 +2,7 @@
 /* CSS Document */
 
 body {
-		background:#AEE4FF;
+		background:white;
 		display: flex;
 		flex-direction: column;
 	
@@ -100,8 +100,8 @@ body {
 		position:fixed;
 		
 	}
-	#g1{
-		margin-top:200px;
+	#gif{
+		margin-top:450px;
 	  	margin-left: 600px;
 	  	position: fixed;
 		border:hidden;
