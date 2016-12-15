@@ -100,3 +100,9 @@ body {
 		position:fixed;
 		
 	}
+	#g1{
+		margin-top:200px;
+	  	margin-left: 600px;
+	  	position: fixed;
+		border:hidden;
+	}

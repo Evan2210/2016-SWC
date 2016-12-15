@@ -1,0 +1,113 @@
+# Blender MTL File: 'None'
+# Material Count: 10
+
+newmtl body
+Ns 400.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.784314 0.784314 0.784314
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\CAC\Documents\GitHub\2016-SWC\ps-13\Toot_Braustein.jpg
+
+newmtl dress
+Ns 400.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.784314 0.784314 0.784314
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\CAC\Documents\GitHub\2016-SWC\ps-13\Toot_Braustein.jpg
+
+newmtl eye
+Ns 400.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.784314 0.784314 0.784314
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\CAC\Documents\GitHub\2016-SWC\ps-13\Toot_Braustein.jpg
+
+newmtl eye.001
+Ns 400.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.784314 0.784314 0.784314
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\CAC\Documents\GitHub\2016-SWC\ps-13\Toot_Braustein.jpg
+
+newmtl hair
+Ns 400.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.784314 0.784314 0.784314
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\CAC\Documents\GitHub\2016-SWC\ps-13\Toot_Braustein.jpg
+
+newmtl in_mouth
+Ns 400.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.784314 0.784314 0.784314
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\CAC\Documents\GitHub\2016-SWC\ps-13\Toot_Braustein.jpg
+
+newmtl in_mouth.001
+Ns 400.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.784314 0.784314 0.784314
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\CAC\Documents\GitHub\2016-SWC\ps-13\Toot_Braustein.jpg
+
+newmtl lashes
+Ns 400.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.784314 0.784314 0.784314
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\CAC\Documents\GitHub\2016-SWC\ps-13\Toot_Braustein.jpg
+map_d C:\\Users\\CAC\\Documents\\GitHub\\2016-SWC\\ps-13\\Toot_Braustein.jpg
+
+newmtl under_d
+Ns 400.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.784314 0.784314 0.784314
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\CAC\Documents\GitHub\2016-SWC\ps-13\Toot_Braustein.jpg
+
+newmtl under_d.001
+Ns 400.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.784314 0.784314 0.784314
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd C:\Users\CAC\Documents\GitHub\2016-SWC\ps-13\Toot_Braustein.jpg

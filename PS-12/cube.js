@@ -21,16 +21,16 @@ var renderer = new THREE.WebGLRenderer({
 renderer.setSize(500, 500);
 
 var directionalLight = new THREE.DirectionalLight('white', 0.5);
-var light = new THREE.AmbientLight('white', 0.5);
-directionalLight.position.set(0, 5, 6);
+var light = new THREE.AmbientLight('white', 5);
+directionalLight.position.set(10, 50, 50);
 scene.add(directionalLight);
 scene.add(light);
 
-loadMesh('little', function(obj){
-  obj.position.y = -8.8;
-  obj.scale.x =2
-  obj.scale.y =2
-  obj.scale.z =2
+loadMesh('hello', function(obj){
+  obj.position.y = -4.8;
+  obj.scale.x =1
+  obj.scale.y =1
+  obj.scale.z =1
   addMesh(obj);
 });
 
